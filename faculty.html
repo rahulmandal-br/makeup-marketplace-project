@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Product - GlowMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Glow<span>Market</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Browse Makeup</a></li>
+                <li><a href="faculty.html" class="active">Sell Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">List Your Beauty Product</h2>
+        
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="prodName">Product / Shade Name *</label>
+                    <input type="text" id="prodName" required placeholder="e.g. Liquid Matte Lipstick - Bombshell">
+                </div>
+                <div class="form-group">
+                    <label for="brand">Brand Name *</label>
+                    <input type="text" id="brand" required placeholder="e.g. Charlotte Tilbury">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category *</label>
+                    <select id="category" required>
+                        <option value="">Select Category</option>
+                        <option value="lips">Lips (Lipsticks, Liners)</option>
+                        <option value="eyes">Eyes (Palettes, Eyeliner)</option>
+                        <option value="face">Face (Foundation, Blush)</option>
+                        <option value="skincare">Skincare Kits</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="condition">Usage Status *</label>
+                    <select id="condition" required>
+                        <option value="">Select Usage Status</option>
+                        <option value="sealed">100% Brand New (Sealed)</option>
+                        <option value="swatched">Swatched Once (Hygiene Intact)</option>
+                        <option value="used">Gently Used (More than 80% left)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Expected Price (₹) *</label>
+                    <input type="number" id="price" required placeholder="e.g. 1200">
+                </div>
+                <div class="form-group">
+                    <label for="expiry">Expiry Date / Batch Code *</label>
+                    <input type="text" id="expiry" required placeholder="e.g. Exp: 12/28 or Batch: A53">
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border-radius:10px; cursor:pointer;">List Product Live</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GlowMarket Beauty Exchange. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
